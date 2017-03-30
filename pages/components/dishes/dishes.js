@@ -22,13 +22,13 @@ Page({
 		],
 		dishesList:[
 				{
-					name:"红烧肉",
+					name:"搬运工",
 					price:38,
 					num:1,
 					id:1
 				},
 				{
-					name:"宫保鸡丁",
+					name:"快递员",
 					price:58,
 					num:1,
 					id:29
