@@ -1,0 +1,13 @@
+<view class="first_box">
+	<view class="nav n1">
+		<text class="nav_txt" bindtap="selectNav">热门职业</text>
+	</view>
+	<view class="center" style="height:50%;width:100%;">
+        <view class="keys" wx:for-items="{{dishesList}}" wx:for-item="item">
+            <text class="icon_txt">{{item.name}}</text>
+        </view>
+    </view>
+</view>
+
+
+<loading hidden="{{hidden}}">正在加载…</loading>

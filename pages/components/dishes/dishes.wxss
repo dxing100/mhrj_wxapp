@@ -1,0 +1,85 @@
+view {
+    position: relative;
+    line-height: 20px;
+    font-size: 14px;
+    font-family: "Arial";
+}
+.first_box {
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+.first_box .nav_txt{
+    margin-left: 35px;
+}
+.first_box .n1 {
+	color: #ff9bac;
+	position: relative;
+	line-height: 35px;
+	border-bottom: 1px solid #ff9bac;
+}
+.first_box .n1:before {
+    background-position: 0 0;
+}
+.first_box .nav:before {
+	position: absolute;
+    width: 25px;
+    height: 25px;
+    content: '\00a0';
+    top: 50%;
+    left: 14px;
+    margin-top: -13px;
+}
+.nav:before, .icon:after {
+    position: absolute;
+    display: block;
+    height: 25px;
+    content: "\00a0";
+    top: 50%;
+    margin-top: -13px;
+    background-image: url(http://img01.51jobcdn.com/im/mobile/dg/home_icon.png);
+    background-size: 125px auto;
+}
+.center {
+    text-align: center !important;
+}
+.keys {
+    float: left;
+    width: 25%;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #ededed;
+}
+.type-nav{
+	position: relative;
+	padding:.7rem .3rem;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+	z-index: 10;
+}
+.dish{
+	margin-left: 1rem;
+	padding: 1rem;
+	border-bottom: 1px solid #ddd;
+}
+.dish .title{
+	display: block;
+	font-size: 1rem;
+}
+.dish p{
+	color: orange;
+	font-size: .75rem;
+}
+.dish .add-btn{
+	width: 3rem;
+	text-align: right;
+}
+
+.cart{
+	display: block;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 1rem;
+	background: #ddd;
+}

@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container flex-wrap flex-direction-col">
+  <view class="my-swiper">
+      <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  </view>
+
+  <view style="height:200px;width:100%;padding-bottom:2px;">
+        <view class="wrap-item" style="height:50%;width:100%;">
+            <view class="icon_back"wx:for-items="{{iconArray}}" wx:for-item="item" wx:if="{{index<4}}">
+              <navigator url="{{item.url}}">
+                <image src="{{item.picture_url}}" style="width:50px;height:50px;display:table;margin-left:auto;margin-right:auto;margin-top:15px;padding-bottom:2px"></image>
+                <text class="icon_txt">{{item.title}}</text>
+               </navigator>
+            </view>
+        </view>
+        <view class="wrap-item" style="height:50%;width:100%;">
+           <view class="icon_back"wx:for-items="{{iconArray}}" wx:for-item="item" wx:if="{{index>=4}}">
+                <image src="{{item.picture_url}}" style="width:50px;height:50px;display:table;margin-left:auto;margin-right:auto;margin-top:15px;padding-bottom:2px"></image>
+                <text class="icon_txt">{{item.title}}</text>
+            </view>
+        </view>
+    </view>
+
+</view>
